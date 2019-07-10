@@ -25,6 +25,14 @@
         configuration.server = @"https://blooming-thicket-89345.herokuapp.com/parse";
     }];
     [Parse initializeWithConfiguration:configuration];
+    
+    if (PFUser.currentUser != nil) {
+        NSLog(@"Welcome back %@ 😀", PFUser.currentUser.username);
+        
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIViewController *chatNavigationController = [storyboard instantiateViewControllerWithIdentifier:@"ChatNavigationController"];
+        self.window.rootViewController = chatNavigationController;
+    }
     return YES;
 }
 
