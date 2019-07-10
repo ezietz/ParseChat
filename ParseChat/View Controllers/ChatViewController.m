@@ -26,8 +26,7 @@
     
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
-    
-    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(onTimer) userInfo:nil repeats:true];
+    [self onTimer];
 }
 
 - (IBAction)clickedSend:(id)sender {
@@ -35,6 +34,7 @@
     PFObject *chatMessage = [PFObject objectWithClassName:@"Message_fbu2019"];
     // Use the name of your outlet to get the text the user typed
     chatMessage[@"text"] = self.messageField.text;
+    chatMessage[@"user"] = PFUser.currentUser;
     
     [chatMessage saveInBackgroundWithBlock:^(BOOL succeeded, NSError * error) {
         if (succeeded) {
@@ -61,7 +61,17 @@
     ChatCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ChatCell"];
     PFObject *msg = self.messagesArray[indexPath.row];
     cell.messageLabel.text = msg[@"text"];
+    
+    PFUser *user = msg[@"user"];
+    if (user != nil) {
+        // User found! update username label with username
+        cell.user.text = user.username;
+    } else {
+        // No user found, set default username
+        cell.user.text = @"🤖";
+    }
     return cell;
+    
 }
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -69,12 +79,13 @@
 }
 
 - (void)onTimer {
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(onTimer) userInfo:nil repeats:true];
     // construct query
     PFQuery *query = [PFQuery queryWithClassName:@"Message_fbu2019"];
 //    [query whereKey:@"likesCount" greaterThan:@100];
     [query orderByDescending:@"createdAt"];
+    [query includeKey:@"user"];
     query.limit = 20;
-    
     // fetch data asynchronously
     [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
         if (posts != nil) {
