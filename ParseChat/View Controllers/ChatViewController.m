@@ -8,11 +8,13 @@
 
 #import "ChatViewController.h"
 #import "Parse/Parse.h"
+#import "ChatCell.h"
 
 @interface ChatViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITextField *messageField;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSArray *messagesArray;
 
 @end
 
@@ -24,6 +26,8 @@
     
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(onTimer) userInfo:nil repeats:true];
 }
 
 - (IBAction)clickedSend:(id)sender {
@@ -53,11 +57,32 @@
 */
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    <#code#>
+    ChatCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ChatCell" forIndexPath:indexPath];
+    cell.messageLabel = self.messagesArray[indexPath.row];
+    return cell;
 }
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    <#code#>
+    return self.messagesArray.count;
+}
+
+- (void)onTimer {
+    // construct query
+    PFQuery *query = [PFQuery queryWithClassName:@"Message_fbu2019"];
+//    [query whereKey:@"likesCount" greaterThan:@100];
+    [query orderByDescending:@"createdAt"];
+    query.limit = 20;
+    
+    // fetch data asynchronously
+    [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
+        if (posts != nil) {
+            // do something with the array of object returned by the call
+            self.messagesArray = posts;
+            [self.tableView reloadData];
+        } else {
+            NSLog(@"%@", error.localizedDescription);
+        }
+    }];
 }
 
 @end
