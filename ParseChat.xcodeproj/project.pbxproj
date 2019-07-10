@@ -17,6 +17,7 @@
 		06C22E2722D659B70000B65A /* ParseChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C22E2622D659B70000B65A /* ParseChatUITests.m */; };
 		06C22E3722D65B010000B65A /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C22E3622D65B010000B65A /* LoginViewController.m */; };
 		06C22E3A22D65F4F0000B65A /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C22E3922D65F4F0000B65A /* ChatViewController.m */; };
+		06C22E3F22D662DA0000B65A /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C22E3E22D662DA0000B65A /* ChatCell.m */; };
 		0C9B630756B1468943155079 /* Pods_ParseChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE818F142351C42F6E93F0B /* Pods_ParseChat.framework */; };
 		DE88E5F48599B1369252AFF5 /* Pods_ParseChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB97EE50DA78DC78ED0FA2F0 /* Pods_ParseChatTests.framework */; };
 		F00BA4CC0CC71CA0F08EC8BD /* Pods_ParseChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D1A9027B9B8DCFA4F927CDD /* Pods_ParseChatUITests.framework */; };
@@ -60,6 +61,8 @@
 		06C22E3622D65B010000B65A /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		06C22E3822D65F4F0000B65A /* ChatViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
 		06C22E3922D65F4F0000B65A /* ChatViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		06C22E3D22D662DA0000B65A /* ChatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
+		06C22E3E22D662DA0000B65A /* ChatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
 		326372276229ADAE05A5A799 /* Pods-ParseChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseChatUITests.debug.xcconfig"; path = "Target Support Files/Pods-ParseChatUITests/Pods-ParseChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4D1A9027B9B8DCFA4F927CDD /* Pods_ParseChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParseChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6428BE96EF2E5B1195AF9451 /* Pods-ParseChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseChatTests.debug.xcconfig"; path = "Target Support Files/Pods-ParseChatTests/Pods-ParseChatTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +127,7 @@
 		06C22E0122D659B60000B65A /* ParseChat */ = {
 			isa = PBXGroup;
 			children = (
+				06C22E3C22D662B40000B65A /* Views */,
 				06C22E3422D65AF00000B65A /* View Controllers */,
 				06C22E0222D659B60000B65A /* AppDelegate.h */,
 				06C22E0322D659B60000B65A /* AppDelegate.m */,
@@ -165,6 +169,15 @@
 				06C22E3922D65F4F0000B65A /* ChatViewController.m */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		06C22E3C22D662B40000B65A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				06C22E3D22D662DA0000B65A /* ChatCell.h */,
+				06C22E3E22D662DA0000B65A /* ChatCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		1BEF463C7A7A6D36A85D5578 /* Pods */ = {
@@ -413,6 +426,7 @@
 				06C22E3722D65B010000B65A /* LoginViewController.m in Sources */,
 				06C22E0722D659B60000B65A /* ViewController.m in Sources */,
 				06C22E3A22D65F4F0000B65A /* ChatViewController.m in Sources */,
+				06C22E3F22D662DA0000B65A /* ChatCell.m in Sources */,
 				06C22E1222D659B70000B65A /* main.m in Sources */,
 				06C22E0422D659B60000B65A /* AppDelegate.m in Sources */,
 			);
