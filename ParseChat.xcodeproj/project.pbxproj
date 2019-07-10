@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06C22E0422D659B60000B65A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C22E0322D659B60000B65A /* AppDelegate.m */; };
+		06C22E0722D659B60000B65A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C22E0622D659B60000B65A /* ViewController.m */; };
+		06C22E0A22D659B60000B65A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06C22E0822D659B60000B65A /* Main.storyboard */; };
+		06C22E0C22D659B70000B65A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06C22E0B22D659B70000B65A /* Assets.xcassets */; };
+		06C22E0F22D659B70000B65A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06C22E0D22D659B70000B65A /* LaunchScreen.storyboard */; };
+		06C22E1222D659B70000B65A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C22E1122D659B70000B65A /* main.m */; };
+		06C22E1C22D659B70000B65A /* ParseChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C22E1B22D659B70000B65A /* ParseChatTests.m */; };
+		06C22E2722D659B70000B65A /* ParseChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C22E2622D659B70000B65A /* ParseChatUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06C22E1822D659B70000B65A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06C22DF722D659B60000B65A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06C22DFE22D659B60000B65A;
+			remoteInfo = ParseChat;
+		};
+		06C22E2322D659B70000B65A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06C22DF722D659B60000B65A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06C22DFE22D659B60000B65A;
+			remoteInfo = ParseChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06C22DFF22D659B60000B65A /* ParseChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06C22E0222D659B60000B65A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		06C22E0322D659B60000B65A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		06C22E0522D659B60000B65A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		06C22E0622D659B60000B65A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		06C22E0922D659B60000B65A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		06C22E0B22D659B70000B65A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06C22E0E22D659B70000B65A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		06C22E1022D659B70000B65A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06C22E1122D659B70000B65A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		06C22E1722D659B70000B65A /* ParseChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParseChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06C22E1B22D659B70000B65A /* ParseChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParseChatTests.m; sourceTree = "<group>"; };
+		06C22E1D22D659B70000B65A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06C22E2222D659B70000B65A /* ParseChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParseChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		06C22E2622D659B70000B65A /* ParseChatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParseChatUITests.m; sourceTree = "<group>"; };
+		06C22E2822D659B70000B65A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06C22DFC22D659B60000B65A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06C22E1422D659B70000B65A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06C22E1F22D659B70000B65A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06C22DF622D659B60000B65A = {
+			isa = PBXGroup;
+			children = (
+				06C22E0122D659B60000B65A /* ParseChat */,
+				06C22E1A22D659B70000B65A /* ParseChatTests */,
+				06C22E2522D659B70000B65A /* ParseChatUITests */,
+				06C22E0022D659B60000B65A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06C22E0022D659B60000B65A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06C22DFF22D659B60000B65A /* ParseChat.app */,
+				06C22E1722D659B70000B65A /* ParseChatTests.xctest */,
+				06C22E2222D659B70000B65A /* ParseChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06C22E0122D659B60000B65A /* ParseChat */ = {
+			isa = PBXGroup;
+			children = (
+				06C22E0222D659B60000B65A /* AppDelegate.h */,
+				06C22E0322D659B60000B65A /* AppDelegate.m */,
+				06C22E0522D659B60000B65A /* ViewController.h */,
+				06C22E0622D659B60000B65A /* ViewController.m */,
+				06C22E0822D659B60000B65A /* Main.storyboard */,
+				06C22E0B22D659B70000B65A /* Assets.xcassets */,
+				06C22E0D22D659B70000B65A /* LaunchScreen.storyboard */,
+				06C22E1022D659B70000B65A /* Info.plist */,
+				06C22E1122D659B70000B65A /* main.m */,
+			);
+			path = ParseChat;
+			sourceTree = "<group>";
+		};
+		06C22E1A22D659B70000B65A /* ParseChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				06C22E1B22D659B70000B65A /* ParseChatTests.m */,
+				06C22E1D22D659B70000B65A /* Info.plist */,
+			);
+			path = ParseChatTests;
+			sourceTree = "<group>";
+		};
+		06C22E2522D659B70000B65A /* ParseChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				06C22E2622D659B70000B65A /* ParseChatUITests.m */,
+				06C22E2822D659B70000B65A /* Info.plist */,
+			);
+			path = ParseChatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06C22DFE22D659B60000B65A /* ParseChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06C22E2B22D659B70000B65A /* Build configuration list for PBXNativeTarget "ParseChat" */;
+			buildPhases = (
+				06C22DFB22D659B60000B65A /* Sources */,
+				06C22DFC22D659B60000B65A /* Frameworks */,
+				06C22DFD22D659B60000B65A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParseChat;
+			productName = ParseChat;
+			productReference = 06C22DFF22D659B60000B65A /* ParseChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06C22E1622D659B70000B65A /* ParseChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06C22E2E22D659B70000B65A /* Build configuration list for PBXNativeTarget "ParseChatTests" */;
+			buildPhases = (
+				06C22E1322D659B70000B65A /* Sources */,
+				06C22E1422D659B70000B65A /* Frameworks */,
+				06C22E1522D659B70000B65A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06C22E1922D659B70000B65A /* PBXTargetDependency */,
+			);
+			name = ParseChatTests;
+			productName = ParseChatTests;
+			productReference = 06C22E1722D659B70000B65A /* ParseChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		06C22E2122D659B70000B65A /* ParseChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06C22E3122D659B70000B65A /* Build configuration list for PBXNativeTarget "ParseChatUITests" */;
+			buildPhases = (
+				06C22E1E22D659B70000B65A /* Sources */,
+				06C22E1F22D659B70000B65A /* Frameworks */,
+				06C22E2022D659B70000B65A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06C22E2422D659B70000B65A /* PBXTargetDependency */,
+			);
+			name = ParseChatUITests;
+			productName = ParseChatUITests;
+			productReference = 06C22E2222D659B70000B65A /* ParseChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06C22DF722D659B60000B65A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = ezietz;
+				TargetAttributes = {
+					06C22DFE22D659B60000B65A = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					06C22E1622D659B70000B65A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 06C22DFE22D659B60000B65A;
+					};
+					06C22E2122D659B70000B65A = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 06C22DFE22D659B60000B65A;
+					};
+				};
+			};
+			buildConfigurationList = 06C22DFA22D659B60000B65A /* Build configuration list for PBXProject "ParseChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06C22DF622D659B60000B65A;
+			productRefGroup = 06C22E0022D659B60000B65A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06C22DFE22D659B60000B65A /* ParseChat */,
+				06C22E1622D659B70000B65A /* ParseChatTests */,
+				06C22E2122D659B70000B65A /* ParseChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06C22DFD22D659B60000B65A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C22E0F22D659B70000B65A /* LaunchScreen.storyboard in Resources */,
+				06C22E0C22D659B70000B65A /* Assets.xcassets in Resources */,
+				06C22E0A22D659B60000B65A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06C22E1522D659B70000B65A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06C22E2022D659B70000B65A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06C22DFB22D659B60000B65A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C22E0722D659B60000B65A /* ViewController.m in Sources */,
+				06C22E1222D659B70000B65A /* main.m in Sources */,
+				06C22E0422D659B60000B65A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06C22E1322D659B70000B65A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C22E1C22D659B70000B65A /* ParseChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06C22E1E22D659B70000B65A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C22E2722D659B70000B65A /* ParseChatUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06C22E1922D659B70000B65A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06C22DFE22D659B60000B65A /* ParseChat */;
+			targetProxy = 06C22E1822D659B70000B65A /* PBXContainerItemProxy */;
+		};
+		06C22E2422D659B70000B65A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06C22DFE22D659B60000B65A /* ParseChat */;
+			targetProxy = 06C22E2322D659B70000B65A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		06C22E0822D659B60000B65A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06C22E0922D659B60000B65A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		06C22E0D22D659B70000B65A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06C22E0E22D659B70000B65A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06C22E2922D659B70000B65A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		06C22E2A22D659B70000B65A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06C22E2C22D659B70000B65A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWVD29HXAU;
+				INFOPLIST_FILE = ParseChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezietz.ParseChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		06C22E2D22D659B70000B65A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWVD29HXAU;
+				INFOPLIST_FILE = ParseChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezietz.ParseChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		06C22E2F22D659B70000B65A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWVD29HXAU;
+				INFOPLIST_FILE = ParseChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezietz.ParseChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParseChat.app/ParseChat";
+			};
+			name = Debug;
+		};
+		06C22E3022D659B70000B65A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWVD29HXAU;
+				INFOPLIST_FILE = ParseChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezietz.ParseChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParseChat.app/ParseChat";
+			};
+			name = Release;
+		};
+		06C22E3222D659B70000B65A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWVD29HXAU;
+				INFOPLIST_FILE = ParseChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezietz.ParseChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ParseChat;
+			};
+			name = Debug;
+		};
+		06C22E3322D659B70000B65A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NWVD29HXAU;
+				INFOPLIST_FILE = ParseChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezietz.ParseChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ParseChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06C22DFA22D659B60000B65A /* Build configuration list for PBXProject "ParseChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06C22E2922D659B70000B65A /* Debug */,
+				06C22E2A22D659B70000B65A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06C22E2B22D659B70000B65A /* Build configuration list for PBXNativeTarget "ParseChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06C22E2C22D659B70000B65A /* Debug */,
+				06C22E2D22D659B70000B65A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06C22E2E22D659B70000B65A /* Build configuration list for PBXNativeTarget "ParseChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06C22E2F22D659B70000B65A /* Debug */,
+				06C22E3022D659B70000B65A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06C22E3122D659B70000B65A /* Build configuration list for PBXNativeTarget "ParseChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06C22E3222D659B70000B65A /* Debug */,
+				06C22E3322D659B70000B65A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06C22DF722D659B60000B65A /* Project object */;
+}
