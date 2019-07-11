@@ -20,7 +20,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 }
 
 - (IBAction)clickedSignUp:(id)sender {
@@ -32,7 +31,6 @@
 }
 
 - (void)registerUser {
-    // initialize a user object
     PFUser *newUser = [PFUser user];
     
     // set user properties
@@ -53,7 +51,6 @@
                                                                  handler:^(UIAlertAction * _Nonnull action) {
                                                                      // handle cancel response here. Doing nothing will dismiss the view.
                                                                  }];
-            // add the cancel action to the alertController
             [alert addAction:cancelAction];
             [self presentViewController:alert animated:YES completion:nil];
         }
@@ -66,7 +63,6 @@
                                                                      handler:^(UIAlertAction * _Nonnull action) {
                                                                          // handle cancel response here. Doing nothing will dismiss the view.
                                                                      }];
-                // add the cancel action to the alertController
                 [alert addAction:cancelAction];
                 [self presentViewController:alert animated:YES completion:nil];
             }
@@ -79,7 +75,6 @@
                                                                  handler:^(UIAlertAction * _Nonnull action) {
                                                                      // handle cancel response here. Doing nothing will dismiss the view.
                                                                  }];
-            // add the cancel action to the alertController
             [alert addAction:cancelAction];
             [self presentViewController:alert animated:YES completion:nil];
         }
@@ -102,19 +97,8 @@
             NSLog(@"User logged in successfully");
             
             [self performSegueWithIdentifier:@"loginSegue" sender:nil];
-            // display view controller that needs to shown after successful login
         }
     }];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

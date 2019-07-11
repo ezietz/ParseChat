@@ -22,8 +22,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     [self onTimer];
@@ -46,16 +44,6 @@
     }];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     
     ChatCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ChatCell"];
@@ -64,10 +52,8 @@
     
     PFUser *user = msg[@"user"];
     if (user != nil) {
-        // User found! update username label with username
         cell.user.text = user.username;
     } else {
-        // No user found, set default username
         cell.user.text = @"🤖";
     }
     return cell;
@@ -80,16 +66,13 @@
 
 - (void)onTimer {
     [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(onTimer) userInfo:nil repeats:true];
-    // construct query
+    // Construct query
     PFQuery *query = [PFQuery queryWithClassName:@"Message_fbu2019"];
-//    [query whereKey:@"likesCount" greaterThan:@100];
     [query orderByDescending:@"createdAt"];
     [query includeKey:@"user"];
     query.limit = 20;
-    // fetch data asynchronously
     [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
         if (posts != nil) {
-            // do something with the array of object returned by the call
             self.messagesArray = posts;
             [self.tableView reloadData];
         } else {
